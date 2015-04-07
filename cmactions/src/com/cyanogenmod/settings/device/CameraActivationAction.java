@@ -52,14 +52,14 @@ public class CameraActivationAction implements SensorAction {
 
     @Override
     public void action() {
+    	turnScreenOn();
         vibrate();
-        turnScreenOn();
         launchCameraIntent();
     }
 
     private void vibrate() {
         Vibrator v = (Vibrator) mContext.getSystemService(Context.VIBRATOR_SERVICE);
-        v.vibrate(500);
+        v.vibrate(250);
     }
 
     private void turnScreenOn() {
