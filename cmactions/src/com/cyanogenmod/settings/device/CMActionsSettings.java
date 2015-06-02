@@ -86,10 +86,6 @@ public class CMActionsSettings {
         return isDozeEnabled(mContext.getContentResolver());
     }
 
-    public boolean isDozeEnabled() {
-        return isDozeEnabled(mContext);
-    }
-
     public boolean isIrWakeupEnabled() {
         return isDozeEnabled() && mIrWakeUpEnabled;
     }
