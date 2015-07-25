@@ -141,6 +141,7 @@ BOARD_SEPOLICY_UNION += \
     device.te \
     file_contexts \
     file.te \
+    gpsd.te \
     healthd.te \
     init_shell.te \
     init.te \
